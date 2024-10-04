@@ -2,7 +2,7 @@
 # UWYO COSC 1010
 # Submission Date 10/03/24
 # Lab 03
-# Lab Section: 
+# Lab Section: 11
 # Sources, people worked with, help given to: Ben(TA)
 
 
@@ -91,7 +91,7 @@ min_temps = [
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
-print("Part 1")
+print("Part 1:")
 max_sum = 0
 min_sum = 0
 for temp in range(len(max_temps)):
@@ -114,7 +114,7 @@ print(f"The average maximum temperature for Laramie in 2023 is {max_mean} degree
 #print(f"The average min in Laramie is {average_min}")
 
 # For the next part, determine the highest and lowest recorded temperatures.
-print("Part 2")
+print("Part 2:")
 
 print(f"The lowest recorded temperature for Laramie in 2023 is", min(min_temps), "degrees.")
 print(f"The highest recorded temperature for Laramie in 2023 is", max(max_temps), "degrees.")
