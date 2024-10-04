@@ -1,16 +1,12 @@
 # Grant Browning
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
+# Submission Date 10/03/24
+# Lab 03
 # Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Sources, people worked with, help given to: Ben(TA)
 
 
-
-# This is your second lab section. It will primarily be about working with lists
+# This is your **fourth** lab section. It will primarily be about working with lists
 # Complete all sections of this assignment 
 max_temps = [
     32, 24, 22, 25, 37, 33, 34, 40, 40, 42,
@@ -51,7 +47,6 @@ max_temps = [
     51, 55, 55, 54, 53, 51, 43, 23, 20, 30,
     35, 32, 41, 48, 44
 ]
-
 
 min_temps = [
     23, 14, 7, 11, 13, 22, 15, 21, 23, 31,
@@ -96,16 +91,32 @@ min_temps = [
 # The above two lists are datasets for the maximum and minimum temperatures for Laramie in 2023.
 # Each of these lists has the same length, indicating that they both have the same index positions.
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
+print("Part 1")
+max_sum = 0
+min_sum = 0
+for temp in range(len(max_temps)):
+    max_sum += max_temps[temp]
+    min_sum += min_temps[temp]
 
-average_max = sum(max_temps) / len(max_temps)
-average_min = sum(min_temps) / len(min_temps) 
-print(f"The average max in Laramie is {average_max}")
-print(f"The average min in Laramie is {average_min}")
+max_mean = max_sum/len(max_temps)
+min_mean = min_sum/len(min_temps)
 
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+print(f"The average minimum temperature for Laramie in 2023 is {min_mean} degrees")
+print(f"The average maximum temperature for Laramie in 2023 is {max_mean} degrees")
+
+#This was used to prove my values came out properly
+#average_max = sum(max_temps) / len(max_temps)
+#average_min = sum(min_temps) / len(min_temps) 
+#print(f"The average max in Laramie is {average_max}")
+#print(f"The average min in Laramie is {average_min}")
+
 # For the next part, determine the highest and lowest recorded temperatures.
+print("Part 2")
+
+print(f"The lowest recorded temperature for Laramie in 2023 is", min(min_temps), "degrees.")
+print(f"The highest recorded temperature for Laramie in 2023 is", max(max_temps), "degrees.")
+
 # HINT: You can find this information without using any logic or looping.
-
-
